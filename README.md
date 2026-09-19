@@ -1,143 +1,320 @@
 <div align="center">
 
-<img src="github-header-banner.png" width="100%" alt="ABDELKARIME AL HANNACHI — Pentest. Reverse. Fix."/>
+<img src="github-header-banner.png" width="100%" alt="ABDELKARIME AL HANNACHI — Offensive Security Researcher"/>
+
+### Offensive Security Researcher · Application Security · Bug Bounty
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/abdelkarime-al-hannachi/)
+[![HackerOne](https://img.shields.io/badge/HackerOne-494949?style=flat-square\&logo=hackerone\&logoColor=white)](https://hackerone.com/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square\&logo=vercel\&logoColor=white)](#)
+
+</div>
+
+---
+
+## About
+
+I am an offensive security researcher focused on **web application security, API security, authentication, authorization, and application architecture**.
+
+My approach is centered on understanding how systems actually behave rather than simply matching vulnerabilities to checklists.
+
+I study vulnerabilities through the full chain:
+
+```text
+Attack Surface
+      ↓
+Architecture
+      ↓
+Trust Boundaries
+      ↓
+Security Assumption
+      ↓
+Exploitation
+      ↓
+Root Cause
+      ↓
+Detection / Remediation
+```
+
+Current work includes authorized bug bounty research, PortSwigger Web Security Academy labs, application security research, and building security tooling.
+
+---
+
+## Current Research
+
+🔴 **GitLab Bug Bounty Research**
+
+Authorized vulnerability research through GitLab's HackerOne program.
+
+Focus areas:
+
+* Passive reconnaissance
+* Attack surface mapping
+* Web & API enumeration
+* Authentication & authorization
+* IDOR / BOLA
+* Business logic vulnerabilities
+* SSRF
+* Security control inconsistencies
+* Vulnerability validation
+* Reproducible reporting
+
+Research workflow:
+
+```text
+Recon → Map → Hypothesize → Test → Validate → Document → Report
+```
+
+---
+
+## Security Research
+
+I publish technical research focused on understanding vulnerabilities beyond the payload itself.
+
+| Research                                               | Focus                                                          |
+| ------------------------------------------------------ | -------------------------------------------------------------- |
+| **Bug Bounty Hunting Methodology 2026**                | Structured methodology for vulnerability research              |
+| **Foundational Security Design Principles**            | Security principles → failure conditions → exploitation paths  |
+| **SSRF: Practical Research & Attack Surface Analysis** | SSRF discovery, blind SSRF, redirects, parsing inconsistencies |
+| **React2Shell / CVE-2025-55182**                       | Technical analysis of insecure deserialization and RCE         |
+| **Security Design Principles**                         | Architectural security analysis                                |
+
+The objective is simple:
+
+> Understand why the vulnerability exists, how it becomes exploitable, and how the underlying security boundary should be fixed.
+
+---
+
+## Featured Projects
+
+### 🔐 Web Application Security Research
+
+**PortSwigger Web Security Academy**
+
+A practical research repository covering web application vulnerabilities through controlled labs.
+
+Focus:
+
+`SQLi` · `XSS` · `SSRF` · `JWT` · `OAuth` · `CORS` · `CSRF` · `XXE` · `GraphQL` · `Race Conditions` · `Business Logic`
+
+Research structure:
+
+```text
+Vulnerability
+      ↓
+Exploitation
+      ↓
+Root Cause
+      ↓
+Secure Implementation
+      ↓
+Detection
+```
+
+---
+
+### 🧰 Offensive Security Toolkit
+
+A growing collection of security research tools focused on automating repetitive offensive-security workflows.
+
+Current direction:
+
+* Intelligent fuzzing
+* Payload generation
+* Payload mutation
+* Response analysis
+* Security automation
+* Context-aware testing
+
+Built primarily with Python.
+
+---
+
+### 🗄️ SecureCorp DB
+
+**Build → Breach → Harden**
+
+A controlled enterprise security database laboratory designed to connect database engineering with offensive security.
+
+```text
+BUILD
+  ↓
+Enterprise security model
+  ↓
+PostgreSQL implementation
+  ↓
+Realistic security data
+  ↓
+BREACH
+  ↓
+SQL Injection
+Race Conditions
+Privilege Escalation
+  ↓
+HARDEN
+  ↓
+Parameterized Queries
+Transactions
+Least Privilege
+  ↓
+Retest
+```
+
+---
+
+## Technical Focus
+
+### Offensive Security
+
+`Web Application Security` · `API Security` · `Penetration Testing` · `Bug Bounty` · `Reconnaissance` · `Burp Suite`
+
+### Vulnerability Research
+
+`SSRF` · `IDOR / BOLA` · `Authentication` · `Authorization` · `JWT` · `OAuth` · `CORS` · `XSS` · `SQL Injection` · `Business Logic`
+
+### Application Security
+
+`Secure Code Review` · `Security Architecture` · `Threat Modeling` · `Semgrep` · `OWASP`
+
+### Development
+
+`Python` · `Java` · `JavaScript` · `C#` · `SQL` · `PostgreSQL`
+
+### Environment
+
+`Linux` · `Kali Linux` · `Docker` · `Git` · `GitHub`
+
+---
+
+## Methodology
+
+My security work follows a repeatable process rather than a collection of random payloads.
+
+```text
+01  RECON
+    Identify the attack surface
+
+02  MAP
+    Understand endpoints, parameters, APIs and trust boundaries
+
+03  MODEL
+    Identify security assumptions and attacker-controlled inputs
+
+04  TEST
+    Build hypotheses and test them manually
+
+05  CHAIN
+    Combine weaknesses when the architecture allows it
+
+06  VALIDATE
+    Prove impact and eliminate false positives
+
+07  ANALYZE
+    Determine the underlying root cause
+
+08  FIX
+    Design the appropriate security control
+
+09  DETECT
+    Automate detection where possible
+
+10  DOCUMENT
+    Produce reproducible technical evidence
+```
+
+---
+
+## Security Philosophy
+
+```python
+def security_research(target):
+
+    understand(target)
+
+    attack_surface = map_attack_surface(target)
+    trust_boundaries = identify_trust_boundaries(target)
+
+    hypothesis = build_security_hypothesis(
+        attack_surface,
+        trust_boundaries
+    )
+
+    result = test_manually(hypothesis)
+
+    if result.is_valid:
+        root_cause = analyze_root_cause(result)
+        remediation = design_secure_fix(root_cause)
+        detection = automate_detection(root_cause)
+
+        document(
+            result,
+            root_cause,
+            remediation,
+            detection
+        )
+```
+
+Security research is not only:
+
+```text
+"Can I exploit this?"
+```
+
+It is also:
+
+```text
+"Why was this possible?"
+"Which security assumption failed?"
+"What trust boundary was violated?"
+"How should the system prevent it?"
+"Can the failure be detected automatically?"
+```
+
+---
+
+## Selected Technologies
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square\&logo=openjdk\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square\&logo=javascript\&logoColor=black)
+![C%23](https://img.shields.io/badge/C%23-239120?style=flat-square\&logo=csharp\&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square\&logo=postgresql\&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square\&logo=docker\&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square\&logo=linux\&logoColor=black)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square\&logo=burpsuite\&logoColor=white)
+![Semgrep](https://img.shields.io/badge/Semgrep-3B82F6?style=flat-square\&logo=semgrep\&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
+
+</div>
+
+---
+
+## GitHub
+
+I use GitHub as a technical laboratory rather than simply a collection of repositories.
+
+Repositories contain:
+
+* Security research
+* Vulnerability analysis
+* Exploitation methodology
+* Secure implementations
+* Security automation
+* Application security experiments
+* Engineering projects
+
+**Quality over repository count.**
+
+---
+
+<div align="center">
+
+### Think like an attacker. Understand like an engineer. Build like a defender.
 
 <br/>
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FF41&background=000000&center=true&vCenter=true&width=600&lines=Pentester+%7C+AppSec+Engineer;Breaking+things+manually.+Fixing+them+properly.;OWASP+Top+10+%7C+PortSwigger+%7C+HackTheBox;From+Pentest+to+Patch.)
-
-</div>
-
----
-
-## 🧠 About Me
-
-```python
-class AbdelkarimeAlHannachi:
-
-    role        = ["Pentester", "AppSec Engineer"]
-    focus       = ["Web Application Security", "Code Review", "Secure Development"]
-    methodology = "Manual pentesting → Code review → Secure fix → Semgrep detection"
-    currently   = "Completing all PortSwigger labs (zero extensions, 100% manual)"
-
-    tools       = ["Burp Suite", "Semgrep", "pip-audit", "npm audit"]
-    languages   = ["Python", "Java", "C#", ".NET", "JavaScript"]
-
-    mindset     = "Think like an attacker. Build like a defender."
-```
-
----
-
-## 🎯 Current Focus
-
-```
-PortSwigger Web Security Academy    ████████████░░░   All labs — manual, zero extensions
-AppSec Code Review                  ████████░░░░░░░   Python + Java vulnerable patterns
-HackTheBox                          ██████░░░░░░░░░   Active machines
-Bug Bounty                          ████░░░░░░░░░░░   Starting soon
-```
-
----
-
-## 🛠️ Tools & Stack
-
-<div align="center">
-
-**Pentesting**
-
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white)
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white)
-
-**AppSec**
-
-![Semgrep](https://img.shields.io/badge/Semgrep-3B82F6?style=for-the-badge&logo=semgrep&logoColor=white)
-![OWASP](https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
-![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=white)
-
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-**Platforms**
-
-![PortSwigger](https://img.shields.io/badge/PortSwigger-FF6633?style=for-the-badge&logo=portswigger&logoColor=white)
-![HackTheBox](https://img.shields.io/badge/HackTheBox-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black)
-![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)
-
-</div>
-
----
-
-## 📁 Featured Repositories
-
-| Repository | Description |
-|------------|-------------|
-| 🔐 [portswigger-access-control-appsec](https://github.com/ABDELKARIMEALHANNACHI/portswigger-access-control-appsec) | Reversing PortSwigger Access Control labs — vulnerable code, secure fixes in Python & Java, Semgrep rules |
-| 🔴 portswigger-sqli-appsec *(coming soon)* | SQL Injection labs reversed — from exploitation to secure parameterized queries |
-| 🔴 portswigger-xss-appsec *(coming soon)* | XSS labs reversed — DOM, reflected, stored — vulnerable patterns and fixes |
-| 🔴 portswigger-auth-appsec *(coming soon)* | Authentication labs reversed — broken auth patterns and secure implementations |
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ABDELKARIMEALHANNACHI&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=FFFFFF)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ABDELKARIMEALHANNACHI&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FF41&text_color=FFFFFF)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ABDELKARIMEALHANNACHI&theme=tokyonight&hide_border=true&background=0D1117&stroke=00FF41&ring=00FF41&fire=FF6633&currStreakLabel=00FF41)
-
-</div>
-
----
-
-## 🧩 Methodology
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   1. PENTEST    →  exploit the vulnerability manually      │
-│   2. REVERSE    →  find the vulnerable code behind it      │
-│   3. ANALYZE    →  understand the developer's mistake      │
-│   4. FIX        →  write the secure version                │
-│   5. DETECT     →  write a Semgrep rule to find it again   │
-│                                                             │
-│   "Think like an attacker. Build like a defender."         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## 📌 Golden Rule
-
-```python
-# Every vulnerability I find comes down to this:
-
-# ❌ Wrong:  authorization based on CLIENT-CONTROLLED data
-# ✅ Right:  authorization based on SERVER-SIDE data
-
-# The attacker controls headers, parameters, and cookies.
-# The server controls the session store and the database.
-# Never confuse the two.
-```
-
----
-
-<div align="center">
-
-![Profile Views](https://komarev.com/ghpvc/?username=ABDELKARIMEALHANNACHI&color=00FF41&style=for-the-badge&label=PROFILE+VIEWS)
-
-```
-// currently hacking something on PortSwigger...
-```
+![Profile Views](https://komarev.com/ghpvc/?username=ABDELKARIMEALHANNACHI\&color=00FF41\&style=flat-square\&label=PROFILE+VIEWS)
 
 </div>
